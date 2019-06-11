@@ -34,7 +34,7 @@
             this.btnRun = new System.Windows.Forms.Button();
             this.btnEnd = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Timer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // pbStatus
@@ -94,6 +94,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "상태진행";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -106,7 +107,7 @@
         private System.Windows.Forms.Button btnRun;
         private System.Windows.Forms.Button btnEnd;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer Timer;
     }
 }
 
